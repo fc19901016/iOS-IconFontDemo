@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *testImageView4;
 @property (weak, nonatomic) IBOutlet UIImageView *testImageView5;
 @property (weak, nonatomic) IBOutlet UIImageView *testImageView6;
+@property (weak, nonatomic) IBOutlet UIImageView *bigImage;
 
 @end
 
@@ -31,6 +32,8 @@
     self.testImageView5.image =  [UIImage iconWithInfo:TBCityIconInfoMake(@"", 125, UIColor.blackColor)];
     self.testImageView6.image =  [UIImage iconWithInfo:TBCityIconInfoMake(@"", 125, UIColor.cyanColor)];
     
+    self.bigImage.image = [UIImage iconWithInfo:TBCityIconInfoMake(@"", 125, UIColor.orangeColor)];
+        
     if ([@""isEqualToString:@""]) {
         NSLog(@"杨洋喜欢泡妹子！");
     }else{
